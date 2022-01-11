@@ -16,6 +16,7 @@ logoutButton.addEventListener('click', () => {
 
 function displayFamilies(families) {
     
+    
     familiesEl.textContent = '';
 
     for (let family of families) {
@@ -25,6 +26,7 @@ function displayFamilies(families) {
 
         bunniesEl.classList.add('bunnies');
         familyEl.classList.add('family');
+        nameEl.textContent = family.name;
 
         for (let bunny of family.fuzzy_bunnies) {
             const bunnyEl = document.createElement('div');
