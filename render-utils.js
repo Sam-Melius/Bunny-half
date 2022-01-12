@@ -4,6 +4,6 @@ export function renderBunny(bunny) {
     bunnyEl.classList.add('bunny');
     bunnyEl.textContent = bunny.name;
 
-    bunnyEl.append(bunny);
+    bunnyEl.append();
     return bunnyEl;
 }
